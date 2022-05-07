@@ -1,0 +1,25 @@
+.footer{
+    display: grid;
+    background-color: $color_brand;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-self: flex-end;
+    padding: em(5);
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+
+    p,a{
+        padding: em(8);
+    }
+    
+    a:hover,a:active{
+        color:$color_header;
+    }
+
+    .icons{
+        padding: em(8);
+        margin-top: em(2);
+    }
+}

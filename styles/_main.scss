@@ -1,0 +1,182 @@
+    .layout{
+        display: grid;
+        width: 100vw;
+        height: 100vh;  
+    }
+    .content{
+        padding: em(35) em(45) em(35) em(25);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: lighten($color_lightaccent,28%);
+        
+    }
+
+    .fotka{
+        height: em(250);
+        width: em(250);
+        border-radius: em(10);
+        box-shadow: em(1) em(1) em(7) $color_darkaccent;
+        margin: em(30) em(10);
+        transition: all 0.5s linear;
+        
+    }
+
+    .data{
+        grid-column: 2/5;
+        display: flex;
+        
+        justify-self: flex-start;
+        flex-direction: column;
+
+        
+    }
+
+    .wrapper{
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .grid_content{
+        display:flex;
+        flex-direction: column;
+        grid-column: 2/4;
+        
+    }
+
+    .grid_list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: em(4);
+    }
+
+
+
+    .zoznam{
+        padding: em(12);
+
+        & li{
+            padding: em(1.5) 0;
+        }
+    }
+
+    .nadpis{
+        font-weight: 800;
+    }
+
+    .basics{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .omne{
+        display: flex;
+        flex-direction: column;
+
+        .popis{
+            align-self: center;
+            font-size: em(35);
+            font-family: 'Bebas Neue', cursive;
+            color: $color_header;
+            
+        }
+    }
+
+    .zakladneinfo{
+        text-align: center;
+        margin-top: em(10);
+        font-family: 'Bebas Neue', cursive;
+        color: $color_header;
+            
+    }
+
+    .shortdescr{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 95%;
+
+        
+
+        li{
+        padding:em(5);
+        font-weight: 700;
+            p{
+            font-weight: 400;
+            padding:em(2);
+            }
+        }
+    }
+
+
+    
+
+    .omne_popis{
+        border-bottom: em(1.5) solid $color_darkaccent;
+    }
+
+    .descr{
+        justify-self: flex-end;
+    }
+
+
+    .software{
+        grid-row: 2/3;
+        grid-column: 1/2; 
+        border-top: em(1.5) solid $color_darkaccent; 
+        align-self: center; 
+        font-size: 16.5px;
+        
+    }
+    .hodnotenie{
+        position: relative;
+        grid-row: 2/3;
+        grid-column: 2/3;
+        align-self: center;
+        border-top: em(1.5) solid $color_darkaccent; 
+    }
+    .zakladneznalosti{
+        grid-row: 1/2;
+        grid-column:2/3;
+    }
+
+    .grid_list1{
+        grid-row:1/2;
+        grid-column: 1/2;
+    }
+
+
+    .bi{
+        color: $color_brand;
+        padding: 0 em(2) 0 em(2);
+        height: em(17);
+        width: em(22);
+
+        
+        
+
+        &.html:nth-child(-n+4){
+            color:#f16524;
+        }
+
+        &.photo:nth-child(-n+3){
+            color:#001d26;
+        }
+        
+        &.git:nth-child(-n+3){
+            color:#e84e31;
+        }
+        
+        &.js:nth-child(-n+3){
+            color:#ffd83a;
+        }
+        &.illu:nth-child(-n+3){
+            color:#330000;
+        }
+        &.css:nth-child(-n+4){
+            color:#2465f1;
+        }
+    }

@@ -1,0 +1,83 @@
+.logo{
+    height: em(80);
+    flex-basis: 25%;
+}
+
+.navigation{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: darken($color_secondary,35%);
+    border-bottom: em(1.5) solid $color_darkaccent;
+}
+
+.brand {
+    
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.position{
+    grid-column: 2/4;
+    display: flex;
+    width:90%;
+    justify-items: center;
+    align-items: flex-start;
+    height: em(50);
+    
+    
+}
+
+.navi_but{
+    position: relative;
+    font-size: 1em;
+    font-style: bold;
+    color: darken($color_lightaccent,45%);
+    padding: em(9);
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 3px;
+    width: 70%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: em(18);
+
+    &:hover{
+        border: em(1) solid $color_darkaccent;   
+        padding: em(9);
+        border-radius: em(5);
+        color: $color_header;
+        box-shadow: 1.5px 1.5px 5px darken($color_darkaccent,25%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    
+    
+   
+    a:hover,a:active{
+        color:$color_header;
+
+        
+        
+        
+        
+    }
+    &.active{
+        background-color: $color_secondary;
+        border-radius: em(5);
+
+        &:hover,&:active{
+            box-shadow: em(2) em(2) em(4) darken($color_darkaccent,25%);
+            cursor: pointer;
+            transition: all 0.5s linear;
+        }
+    }
+}
+
+
+    
+
