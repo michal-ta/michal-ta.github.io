@@ -1,0 +1,12 @@
+[submodule "Ocna-ambulancia"]
+	path = Ocna-ambulancia
+	url = https://github.com/michal-ta/Ocna-ambulancia.git
+[submodule "Bistro"]
+	path = Bistro
+	url = https://github.com/michal-ta/Bistro.git
+[submodule "calucator"]
+	path = calucator
+	url = https://github.com/michal-ta/calucator.git
+[submodule "filter"]
+	path = filter
+	url = https://github.com/michal-ta/filter.git
