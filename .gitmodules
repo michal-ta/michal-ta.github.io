@@ -1,6 +1,4 @@
-[submodule "Ocna-ambulancia"]
-	path = Ocna-ambulancia
-	url = https://github.com/michal-ta/Ocna-ambulancia.git
+
 [submodule "calucator"]
 	path = calucator
 	url = https://github.com/michal-ta/calucator.git
