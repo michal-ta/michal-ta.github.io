@@ -8,3 +8,9 @@
 [submodule "Bistro"]
 	path = Bistro
 	url = https://github.com/michal-ta/Bistro.git
+[submodule "ocnaambulancia"]
+	path = ocnaambulancia
+	url = https://github.com/michal-ta/ocnaambulancia.git
+[submodule "Mbart"]
+	path = Mbart
+	url = https://github.com/michal-ta/Mbart.git
