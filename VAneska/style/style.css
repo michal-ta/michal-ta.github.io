@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 25px;
+}
+
+.layout {
+  background-color: #f5f4;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1 {
+  color: #f54525;
+}
+
+.popis {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.vaneska_photo {
+  height: 450px;
+}
+
+.vaneska_photo:hover {
+  -webkit-transform: scale(1.12) rotate(0.8deg) translateY(25px);
+          transform: scale(1.12) rotate(0.8deg) translateY(25px);
+}
+/*# sourceMappingURL=style.css.map */
