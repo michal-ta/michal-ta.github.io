@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-color: #f4f5f6;
+  background-color: #afafc4;
 }
 
 a {
@@ -46,8 +46,8 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
-  background-color: #929ca6;
-  border-bottom: 0.09375em solid #1f101e;
+  background-color: #52526f;
+  border-bottom: 0.09375em solid #262d28;
 }
 
 .brand {
@@ -79,7 +79,7 @@ a {
   position: relative;
   font-size: 1em;
   font-style: bold;
-  color: #3d3d38;
+  color: #422a15;
   padding: 0.5625em;
   list-style: none;
   text-decoration: none;
@@ -91,10 +91,10 @@ a {
 }
 
 .navi_but:hover {
-  border: 0.0625em solid #1f101e;
+  border: 0.0625em solid #262d28;
   padding: 0.5625em;
   border-radius: 0.3125em;
-  color: #b04b44;
+  color: #f32618;
   -webkit-box-shadow: 1.5px 1.5px 5px black;
           box-shadow: 1.5px 1.5px 5px black;
   -webkit-transition: all 0.5s ease-in-out;
@@ -102,11 +102,11 @@ a {
 }
 
 .navi_but a:hover, .navi_but a:active {
-  color: #b04b44;
+  color: #f32618;
 }
 
 .navi_but.active {
-  background-color: #f4f5f6;
+  background-color: #afafc4;
   border-radius: 0.3125em;
 }
 
@@ -121,7 +121,7 @@ a {
 .footer {
   display: -ms-grid;
   display: grid;
-  background-color: #969c9f;
+  background-color: #917c69;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -139,7 +139,7 @@ a {
 }
 
 .footer a:hover, .footer a:active {
-  color: #b04b44;
+  color: #f32618;
 }
 
 .footer .icons {
