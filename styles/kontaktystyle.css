@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-color: #afafc4;
+  background-color: #9e9e9e;
 }
 
 a {
@@ -46,8 +46,8 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
-  background-color: #52526f;
-  border-bottom: 0.09375em solid #262d28;
+  background-color: #454545;
+  border-bottom: 0.09375em solid #141414;
 }
 
 .brand {
@@ -79,7 +79,7 @@ a {
   position: relative;
   font-size: 1em;
   font-style: bold;
-  color: #422a15;
+  color: black;
   padding: 0.5625em;
   list-style: none;
   text-decoration: none;
@@ -91,37 +91,30 @@ a {
 }
 
 .navi_but:hover {
-  border: 0.0625em solid #262d28;
+  border: 0.0625em solid #141414;
   padding: 0.5625em;
   border-radius: 0.3125em;
-  color: #f32618;
-  -webkit-box-shadow: 1.5px 1.5px 5px black;
-          box-shadow: 1.5px 1.5px 5px black;
+  color: #fba92c;
+  -webkit-box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
+          box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .navi_but a:hover, .navi_but a:active {
-  color: #f32618;
+  color: #fba92c;
 }
 
 .navi_but.active {
-  background-color: #afafc4;
+  background-color: #9e9e9e;
   border-radius: 0.3125em;
-}
-
-.navi_but.active:hover, .navi_but.active:active {
-  -webkit-box-shadow: 0.125em 0.125em 0.25em black;
-          box-shadow: 0.125em 0.125em 0.25em black;
-  cursor: pointer;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  border: 0.075em #fba92c solid;
 }
 
 .footer {
   display: -ms-grid;
   display: grid;
-  background-color: #917c69;
+  background-color: #565656;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -139,7 +132,7 @@ a {
 }
 
 .footer a:hover, .footer a:active {
-  color: #f32618;
+  color: #fba92c;
 }
 
 .footer .icons {

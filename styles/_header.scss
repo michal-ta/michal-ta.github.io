@@ -51,7 +51,7 @@
         padding: em(9);
         border-radius: em(5);
         color: $color_header;
-        box-shadow: 1.5px 1.5px 5px darken($color_darkaccent,25%);
+        box-shadow: em(1) em(1) em(8) $color_header;
         transition: all 0.5s ease-in-out;
     }
 
@@ -69,12 +69,9 @@
     &.active{
         background-color: $color_secondary;
         border-radius: em(5);
+        border: em(1.2) $color_header solid;
 
-        &:hover,&:active{
-            box-shadow: em(2) em(2) em(4) darken($color_darkaccent,25%);
-            cursor: pointer;
-            transition: all 0.5s linear;
-        }
+        
     }
 }
 
