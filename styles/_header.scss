@@ -47,12 +47,12 @@
     font-size: em(18);
 
     &:hover{
-        border: em(1) solid $color_darkaccent;   
+        border: em(1) solid $color_header;   
         padding: em(9);
         border-radius: em(5);
         color: $color_header;
         box-shadow: em(1) em(1) em(8) $color_header;
-        transition: all 0.5s ease-in-out;
+        transition:all ease-in-out 0.35s ;
     }
 
     

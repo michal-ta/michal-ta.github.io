@@ -91,14 +91,14 @@ a {
 }
 
 .navi_but:hover {
-  border: 0.0625em solid #141414;
+  border: 0.0625em solid #fba92c;
   padding: 0.5625em;
   border-radius: 0.3125em;
   color: #fba92c;
   -webkit-box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
           box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all ease-in-out 0.35s;
+  transition: all ease-in-out 0.35s;
 }
 
 .navi_but a:hover, .navi_but a:active {
