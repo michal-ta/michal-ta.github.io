@@ -1,8 +1,40 @@
-    .layout{
+    .hero_wraper{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 90vh;
         width: 100vw;
-        height: 100vh;  
     }
+
+    .hero_body{
+        grid-row:2/5;
+        grid-column: 1/5;
+
+        &::after{
+            content: "Webdeveloper";
+            font-weight: 800;
+            position:relative;
+            font-size: 1800%;
+            color:transparentize($color: #d4cef9, $amount: 0.95);
+            top:em(125,100);
+            left:em(58,200);
+            
+        }
+
+        h1{
+            font-size: 600%;
+            color: #ffd5ac;
+            font-weight: 800;
+            letter-spacing: em(0.5);
+        }
+
+        h2{
+            font-weight: 800;
+            color: aliceblue;
+        }
+    }
+
+
     .content{
         padding: em(35) em(45) em(35) em(25);
         display:grid;
