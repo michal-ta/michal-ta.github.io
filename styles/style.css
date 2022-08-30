@@ -19,8 +19,8 @@ a {
 }
 
 body {
-  width: 100vw;
-  background-color: #9e9e9e;
+  width: 100%;
+  background-color: #cecece;
   font-size: 100%;
 }
 
@@ -29,41 +29,39 @@ a {
 }
 
 .layout {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 1.5625em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.logo {
-  height: 5em;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+.content_wraper {
+  height: 100%;
+  width: 100%;
 }
 
 .navigation {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 98%;
-  background-color: #454545;
-  border-bottom: 0.09375em solid #141414;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 6.58vh;
+  background-color: #b5b5b5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  padding: 0 3.5625em;
 }
 
 .brand {
@@ -76,6 +74,12 @@ a {
   justify-items: flex-start;
 }
 
+.logo {
+  height: 80%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
 .position {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -83,7 +87,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 50%;
   justify-items: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -92,9 +96,8 @@ a {
 }
 
 .navi_but {
-  font-size: 12px;
-  font-style: bold;
-  color: black;
+  font-size: 1.25em;
+  color: #fff;
   padding: 0.5625em;
   list-style: none;
   text-decoration: none;
@@ -105,25 +108,8 @@ a {
   font-size: 1.125em;
 }
 
-.navi_but:hover {
-  border: 0.0625em solid #141414;
-  padding: 0.5625em;
-  border-radius: 0.3125em;
-  color: #fba92c;
-  -webkit-box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
-          box-shadow: 0.0625em 0.0625em 0.5em #fba92c;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.navi_but a:hover, .navi_but a:active {
-  color: #fba92c;
-}
-
 .navi_but.active {
-  background-color: #9e9e9e;
-  border-radius: 0.3125em;
-  border: 0.075em #fba92c solid;
+  color: #cd3bd3;
 }
 
 .hero_wraper {
