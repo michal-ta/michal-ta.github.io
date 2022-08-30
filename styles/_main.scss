@@ -1,214 +1,43 @@
-    .hero_wraper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        height: 90vh;
-        width: 100vw;
-    }
+.content_main{
+    padding: em(145) em(80);
+    height: 88.84vh;
+    display: flex;
+}
 
-    .hero_body{
-        grid-row:2/5;
-        grid-column: 1/5;
+.left_side{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: em(12);
 
-        &::after{
-            content: "Webdeveloper";
-            font-weight: 800;
-            position:relative;
-            font-size: 1800%;
-            color:transparentize($color: #d4cef9, $amount: 0.95);
-            top:em(125,100);
-            left:em(58,200);
-            
-        }
-
-        h1{
-            font-size: 600%;
-            color: #ffd5ac;
-            font-weight: 800;
-            letter-spacing: em(0.5);
-        }
-
-        h2{
-            font-weight: 800;
-            color: aliceblue;
-        }
-    }
-
-
-    .content{
-        padding: em(35) em(45) em(35) em(25);
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: lighten($color_lightaccent,28%);
+    h3{
+        font-weight: 400;
+        font-size: medium;
+        color: #828282 ;
         
     }
 
-    .fotka{
-        height: em(250);
-        width: em(250);
-        border-radius: em(10);
-        box-shadow: em(1) em(1) em(7) $color_darkaccent;
-        margin: em(30) em(10);
-        transition: all 0.5s linear;
+    h1{
+        color: #fff;
+        font-size: clamp(1.5em , 5.5rem , 6.5rem );
         
     }
-
-    .data{
-        grid-column: 2/5;
-        display: flex;
-        
-        justify-self: flex-start;
-        flex-direction: column;
-
+    p{
+        width: 70%;
         
     }
-
-    .wrapper{
-        display:flex;
-        flex-direction: column;
-        
-    }
-
-    .grid_content{
-        display:flex;
-        flex-direction: column;
-        grid-column: 2/4;
-        
-    }
-
-    .grid_list{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        grid-gap: em(4);
-    }
-
-
-
-    .zoznam{
-        padding: em(12);
-
-        & li{
-            padding: em(1.5) 0;
-        }
-    }
-
-    .nadpis{
-        font-weight: 800;
-    }
-
-    .basics{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-
-    .omne{
-        display: flex;
-        flex-direction: column;
-
-        .popis{
-            align-self: center;
-            font-size: em(35);
-            font-family: 'Bebas Neue', cursive;
-            color: $color_header;
-            
-        }
-    }
-
-    .zakladneinfo{
+    a{
+        width: 30%;
         text-align: center;
-        margin-top: em(10);
-        font-family: 'Bebas Neue', cursive;
-        color: $color_header;
-            
-    }
-
-    .shortdescr{
-        display: flex;
-        flex-direction: column;
-        flex-basis: 95%;
-
-        
-
-        li{
-        padding:em(5);
-        font-weight: 700;
-            p{
-            font-weight: 400;
-            padding:em(2);
-            }
-        }
-    }
-
-
-    
-
-    .omne_popis{
-        border-bottom: em(1.5) solid $color_darkaccent;
-    }
-
-    .descr{
         justify-self: flex-end;
-    }
-
-
-    .software{
-        grid-row: 2/3;
-        grid-column: 1/2; 
-        border-top: em(1.5) solid $color_darkaccent; 
-        align-self: center; 
-        font-size: 16.5px;
-        
-    }
-    .hodnotenie{
-        position: relative;
-        grid-row: 2/3;
-        grid-column: 2/3;
         align-self: center;
-        border-top: em(1.5) solid $color_darkaccent; 
+        height: em(64,25);
+        padding: em(12,25);
+        font-size: 1.2rem;
+        background-color:$color_accent;
+        font-weight: 700;
+        color: #fff;
     }
-    .zakladneznalosti{
-        grid-row: 1/2;
-        grid-column:2/3;
-    }
-
-    .grid_list1{
-        grid-row:1/2;
-        grid-column: 1/2;
-    }
-
-
-    .bi{
-        color: $color_brand;
-        padding: 0 em(2) 0 em(2);
-        height: em(17);
-        width: em(22);
-
-        
-        
-
-        &.html:nth-child(-n+4){
-            color:#f16524;
-        }
-
-        &.photo:nth-child(-n+3){
-            color:#001d26;
-        }
-        
-        &.git:nth-child(-n+3){
-            color:#e84e31;
-        }
-        
-        &.js:nth-child(-n+3){
-            color:#ffd83a;
-        }
-        &.illu:nth-child(-n+3){
-            color:#330000;
-        }
-        &.css:nth-child(-n+4){
-            color:#2465f1;
-        }
-    }
+}

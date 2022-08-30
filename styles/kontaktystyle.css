@@ -61,7 +61,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  padding: 0 3.5625em;
+  padding: 0 5em;
 }
 
 .brand {
@@ -89,10 +89,10 @@ a {
   display: flex;
   width: 50%;
   justify-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  height: 3.125em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .navi_but {
@@ -109,35 +109,38 @@ a {
 }
 
 .navi_but.active {
-  color: #cd3bd3;
+  color: #ad3c3d;
 }
 
-.footer {
-  display: -ms-grid;
-  display: grid;
-  background-color: #565656;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  align-self: flex-end;
-  padding: 0.3125em;
+footer {
+  width: 100vw;
+  height: 4.58vh;
+  background-color: #b5b5b5;
+}
+
+footer ul {
   height: 100%;
-  width: 100%;
-  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5em;
 }
 
-.footer p, .footer a {
-  padding: 0.5em;
+footer li {
+  padding: 0.25em;
+  background-color: #cecece;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
 }
 
-.footer a:hover, .footer a:active {
-  color: #fba92c;
-}
-
-.footer .icons {
-  padding: 0.5em;
-  margin-top: 0.125em;
+.eng {
+  margin-left: 2.5em;
 }
 /*# sourceMappingURL=kontaktystyle.css.map */

@@ -1,25 +1,25 @@
-.footer{
-    display: grid;
-    background-color: $color_brand;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-content: center;
-    align-self: flex-end;
-    padding: em(5);
-    height: 100%;
-    width: 100%;
-    font-size: 12px;
+footer{
+    width: 100vw;
+    height: 4.58vh;
+    background-color: $color_primary_darker;
 
-    p,a{
-        padding: em(8);
-    }
-    
-    a:hover,a:active{
-        color:$color_header;
+    ul{
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 em(80);
     }
 
-    .icons{
-        padding: em(8);
-        margin-top: em(2);
+    li{
+        padding: em(4);
+        background-color: $color_bg_primary;
+        font-size: 14px;
+        font-weight: 500;
+        color: darken($color_bg_primary,35%);
     }
+}
+
+.eng{
+    margin-left: em(40);
 }
