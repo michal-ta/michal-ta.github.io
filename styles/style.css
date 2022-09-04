@@ -32,8 +32,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,8 +47,20 @@ a {
 }
 
 .content_wraper {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.content_wraper.omne {
+  height: 98vh;
 }
 
 .navigation {
@@ -61,7 +73,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  padding: 0 5em;
+  padding: 0 8%;
 }
 
 .brand {
@@ -75,7 +87,8 @@ a {
 }
 
 .logo {
-  height: 80%;
+  height: 100%;
+  width: auto;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
@@ -96,7 +109,7 @@ a {
 }
 
 .navi_but {
-  font-size: 1.25em;
+  font-size: clamp(0.6rem, 0.9rem, 1.5rem);
   color: #fff;
   padding: 0.5625em;
   list-style: none;
@@ -105,7 +118,6 @@ a {
   width: 70%;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.125em;
 }
 
 .navi_but.active {
@@ -113,11 +125,15 @@ a {
 }
 
 .content_main {
-  padding: 9.0625em 5em;
-  height: 88.84vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 9.0625em 8%;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 3fr 1fr;
+      grid-template-rows: 3fr 1fr;
 }
 
 .triangle {
@@ -125,30 +141,52 @@ a {
   width: 747px;
   position: absolute;
   z-index: -2;
-  top: -4.96vh;
-  left: -12.64vw;
+  top: 0%;
+  left: -5%;
 }
 
 .hero_btn {
   width: 30%;
   text-align: center;
-  justify-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   height: 2.56em;
   padding: 0.48em;
-  font-size: 1.4rem;
+  font-size: clamp(0.8rem, 1.2rem, 2.5rem);
   background-color: #bd4243;
   font-weight: 700;
   color: #fff;
-  -webkit-transform: translateY(4.0625em);
-          transform: translateY(4.0625em);
+  position: relative;
+}
+
+.hero_btn.right {
+  margin-left: 9.5%;
+  justify-self: flex-start;
+  background-color: #cecece;
+  color: #141414;
+  font-weight: 400;
+  border: 2px solid #ad3c3d;
+}
+
+.hero_btn.left::after {
+  content: url(../img/arrow.svg);
+  position: absolute;
+  top: -87.5%;
+  left: 84%;
+  display: block;
 }
 
 .left_side {
-  width: 50%;
-  min-height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,15 +200,20 @@ a {
   padding-left: 0.75em;
 }
 
+.left_side img {
+  display: inline-block;
+  height: 25%;
+}
+
 .left_side h3 {
   font-weight: 400;
-  font-size: medium;
+  font-size: clamp(0.85rem, 1.8rem, 2.8rem);
   color: #828282;
 }
 
 .left_side h1 {
   color: #fff;
-  font-size: clamp(1.5em, 5.5rem, 6.5rem);
+  font-size: clamp(2.5rem, 4rem, 5.5rem);
   margin-top: 0.45455em;
 }
 
@@ -179,12 +222,13 @@ a {
   margin-top: 2.5em;
 }
 
-.arrow {
-  position: relative;
-  left: 26.50vw;
-}
-
 .right_side {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,7 +236,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 80%;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -200,17 +244,18 @@ a {
 }
 
 .right_side img {
-  height: 42.18vh;
-  width: 37.33vw;
+  margin-left: 24%;
+  height: 80%;
+  width: 100%;
 }
 
-.right_side .hero_btn {
+.content_main.omne .left_side .myphoto {
+  height: 60%;
+  width: 90%;
   background-color: #cecece;
-  border: 0.07812em solid #bd4243;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 3.4375em;
-  font-weight: 500;
+  background-image: url(../img/fotka.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer {
@@ -230,7 +275,7 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5em;
+  padding: 0 8%;
 }
 
 footer li {

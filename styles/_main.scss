@@ -1,7 +1,11 @@
 .content_main{
-    padding: em(145) em(80);
-    height: 88.84vh;
-    display: flex;
+    padding: em(145) 8%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr ;
+    
 }
 
 .triangle{
@@ -9,35 +13,62 @@
     width: 747px;
     position: absolute;
     z-index: -2;
-    top: -4.96vh;
-    left: -12.64vw;
+    top: 0%;
+    left: -5%;
 }
 
 .hero_btn{
     width: 30%;
     text-align: center;
-    justify-self: flex-end;
+    justify-self: center;
     align-self: center;
     height: em(64, 25);
     padding: em(12, 25);
-    font-size: 1.4rem;
+    font-size: clamp(0.8rem,1.2rem,2.5rem);
     background-color: $color_accent;
     font-weight: 700;
     color: #fff;
-    transform: translateY(em(65));
+    position: relative;
+
+    &.right{
+        margin-left: 9.5%;
+        justify-self: flex-start;
+        background-color: $color_bg_primary;
+        color: $color_darkaccent;
+        font-weight: 400;
+        border: 2px solid $color_button_active;
+        
+
+    }
+
+    &.left::after{
+        content: url(../img/arrow.svg);
+        position: absolute;
+        top: -87.5%;
+        left: 84%;
+        display: block;
+        
+    }
+
+
 }
 
 .left_side{
-    width: 50%;
-    min-height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: em(12);
+    img {
+            display: inline-block;
+            height:25%;
+        }
 
     h3{
         font-weight: 400;
-        font-size: medium;
+        font-size: clamp(0.85rem,1.8rem,2.8rem);
         color: #828282 ;
 
         
@@ -45,7 +76,7 @@
 
     h1{
         color: #fff;
-        font-size: clamp(1.5em , 5.5rem , 6.5rem );
+        font-size: clamp(2.5rem , 4rem , 5.5rem );
         margin-top: em(40,88);
         
     }
@@ -57,29 +88,36 @@
     
     
 }
-.arrow{
-    position: relative;
-    left: 26.50vw;
-    
-}
+
 
 .right_side{
+    grid-column: 2/3;
+    grid-row: 1/2;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     justify-items: center;
     align-items: center;
 
     img{
-        height: 42.18vh;
-        width: 37.33vw;
+        margin-left: 24%;
+        height: 80%;
+        width: 100%;
     }
 
-    .hero_btn{
-        background-color:$color_bg_primary;
-        border: em(1.25) solid $color_accent;
-        align-self: flex-start;
-        margin-left: em(55);
-        font-weight: 500;
+    
+}
+
+.content_main.omne{
+    .left_side{
+        .myphoto{
+
+            height: 60%;
+            width: 90%;
+            background-color: $color_bg_primary;
+            background-image: url(../img/fotka.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            }
     }
 }

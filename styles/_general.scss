@@ -29,8 +29,8 @@ a{
 }
 .layout{
     display: flex;
-    width: 100vw; 
-    height: 100vh;
+    width: 100%; 
+    height: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -38,7 +38,13 @@ a{
 }
 
 .content_wraper{
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
+    &.omne{
+        height: 98vh;
+    }
 }

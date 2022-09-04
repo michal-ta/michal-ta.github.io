@@ -32,8 +32,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,8 +47,20 @@ a {
 }
 
 .content_wraper {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.content_wraper.omne {
+  height: 98vh;
 }
 
 .navigation {
@@ -61,7 +73,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100vw;
-  padding: 0 5em;
+  padding: 0 8%;
 }
 
 .brand {
@@ -75,7 +87,8 @@ a {
 }
 
 .logo {
-  height: 80%;
+  height: 100%;
+  width: auto;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
@@ -96,7 +109,7 @@ a {
 }
 
 .navi_but {
-  font-size: 1.25em;
+  font-size: clamp(0.6rem, 0.9rem, 1.5rem);
   color: #fff;
   padding: 0.5625em;
   list-style: none;
@@ -105,7 +118,6 @@ a {
   width: 70%;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.125em;
 }
 
 .navi_but.active {
@@ -129,7 +141,7 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5em;
+  padding: 0 8%;
 }
 
 footer li {
