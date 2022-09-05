@@ -111,13 +111,11 @@
 .content_main.omne{
     .left_side{
         .myphoto{
-
-            height: 60%;
-            width: 90%;
-            background-color: $color_bg_primary;
-            background-image: url(../img/fotka.png);
-            background-size:contain;
-            background-repeat: no-repeat;
+            display: inline-block;
+            height: 37%;
+            width: 111%;
+            content: url(../img/photo.svg);
+            background-color:transparetize($color_bg_primary,12%);
             }
     }
 }
