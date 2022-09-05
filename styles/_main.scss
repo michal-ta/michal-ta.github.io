@@ -1,18 +1,27 @@
 .content_main{
     padding: em(145) em(80);
     height: 88.84vh;
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
 }
 
 .triangle{
-    height: 785px;
-    width: 747px;
-    position: absolute;
+    height: min(80vw, 200px);
+    width: min(80vw , 200px);
+    position: fixed;
     z-index: -2;
-    top: -4.96vh;
-    left: -12.64vw;
+    top: -4%;
+    left: -10%;
 }
 
+.buttons.hero{
+    grid-column: 1/3;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
 .hero_btn{
     width: 30%;
     text-align: center;
@@ -20,17 +29,34 @@
     align-self: center;
     height: em(64, 25);
     padding: em(12, 25);
-    font-size: 1.4rem;
     background-color: $color_accent;
     font-weight: 700;
     color: #fff;
     transform: translateY(em(65));
+    font-size: clamp(1em , 1vw , 2em);
+
+    &.first::after{
+        content: url(../img/arrow.svg);
+        position: absolute;
+        top:-90%;
+        left: 90%;
+    }
+        
+    
+
+    &.second{
+        background-color:$color_bg_primary;
+        border: em(1.25) solid $color_accent;
+        margin-left: em(55);
+        font-weight: 400;
+        
+    }
 }
 
 .left_side{
-    width: 50%;
     min-height: 100%;
     display: flex;
+    flex: 2;
     flex-direction: column;
     align-items: flex-start;
     padding-left: em(12);
@@ -39,47 +65,38 @@
         font-weight: 400;
         font-size: medium;
         color: #828282 ;
+        font-size: clamp(1rem , 6vw , 2rem);
 
         
     }
 
     h1{
         color: #fff;
-        font-size: clamp(1.5em , 5.5rem , 6.5rem );
+        font-size: clamp(1.62rem , 10vw , 7rem);
         margin-top: em(40,88);
         
     }
     p{
         width: 70%;
         margin-top: em(40);
+        font-size: clamp(1em , 1vw , 2em);
         
     }
     
     
 }
-.arrow{
-    position: relative;
-    left: 26.50vw;
-    
-}
-
 .right_side{
     display: flex;
+    flex: 2;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     justify-items: center;
     align-items: center;
 
     img{
-        height: 42.18vh;
+        height: 50.18vh;
         width: 37.33vw;
     }
 
-    .hero_btn{
-        background-color:$color_bg_primary;
-        border: em(1.25) solid $color_accent;
-        align-self: flex-start;
-        margin-left: em(55);
-        font-weight: 500;
-    }
+    
 }
