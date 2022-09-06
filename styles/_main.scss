@@ -118,4 +118,11 @@
             background-color:transparetize($color_bg_primary,12%);
             }
     }
+
+    .right_side{
+        display: flex;
+        flex-direction: row;
+    }
 }
+
+
