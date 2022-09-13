@@ -100,6 +100,14 @@
         margin: 0;
     }
 }
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+
+}
+
 .container {
     background-color: $color_card;
     padding: em(8);
@@ -110,3 +118,10 @@
     grid-row: 4/6;
 }
 
+.anotherskill{
+    grid-column: 6/8;
+    grid-row: 4/6;
+}
+.lang{
+    grid-column: 9/11;
+}
