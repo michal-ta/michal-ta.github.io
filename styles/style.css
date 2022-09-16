@@ -47,7 +47,7 @@ a {
 }
 
 .content_wraper {
-  height: 100vh;
+  max-height: 106vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@ a {
 }
 
 .content_wraper.omne {
-  height: 98vh;
+  height: 100vh;
 }
 
 .navigation {
@@ -125,8 +125,8 @@ a {
 }
 
 .content_main {
-  padding: 9.0625em 8%;
-  height: 100vh;
+  padding: 8% 8%;
+  height: 100%;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -278,7 +278,7 @@ a {
 }
 
 .content_main.omne .left_side .myphoto {
-  height: 100%;
+  height: 80%;
   position: relative;
   content: url(../img/photo.svg);
 }
@@ -316,7 +316,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 90%;
   width: 100%;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -330,7 +330,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: 90%;
 }
 
 .flex_container.left li {
@@ -460,179 +460,5 @@ footer li {
 
 .eng {
   margin-left: 2.5em;
-}
-
-@media (max-width: 810px) {
-  body {
-    font-size: 0.875em;
-  }
-  .wrapper {
-    font-size: 0.875em;
-  }
-  .fotka {
-    height: 11.25em;
-    width: 11.25em;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-  }
-  .navi_but {
-    font-size: 0.9375em;
-    letter-spacing: 2.5px;
-    width: 55%;
-    padding: 0.1875em;
-  }
-  .logo {
-    height: 4.0625em;
-  }
-  .nazov {
-    font-size: 1.125em;
-  }
-  .brand {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .omne {
-    font-size: 0.9375em;
-  }
-  .omne .popis {
-    font-size: 1.5625em;
-    letter-spacing: 0.125em;
-  }
-  .zakandeinfo {
-    font-size: 1.25em;
-  }
-  .grid_list {
-    font-size: 0.9375em;
-  }
-  .grid_list h2 {
-    font-size: 1.25em;
-  }
-  .software {
-    font-size: 0.9875em;
-    border-top: 0;
-  }
-  .hodnotenie {
-    border-top: 0;
-  }
-  .bi {
-    height: 1em;
-  }
-  .footer {
-    font-size: 0.625em;
-    letter-spacing: 0.1125em;
-    font-weight: 400;
-  }
-}
-
-@media (max-width: 620px) {
-  .grid_list {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .grid_list1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
-  }
-  .zakladneznalosti {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
-  }
-  .hodnotenie {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 2;
-    grid-column: 2/2;
-  }
-  .software {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-}
-
-@media (max-width: 550px) {
-  .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .basics {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .wrapper {
-    margin-bottom: 0.9375em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .footer a {
-    padding-top: 0.75em;
-  }
-}
-
-@media (max-width: 425px) {
-  .navigation {
-    justify-items: center;
-  }
-  .brand {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-  }
-  .position {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .fotka {
-    height: 8.125em;
-    width: 8.125em;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-  }
-  .basics {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 /*# sourceMappingURL=style.css.map */
