@@ -256,7 +256,7 @@ a {
 }
 
 .content_main.omne {
-  max-height: 100vh;
+  max-height: 90vh;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
