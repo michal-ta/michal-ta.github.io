@@ -47,7 +47,7 @@ a {
 }
 
 .content_wraper {
-  height: 100vh;
+  max-height: 106vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@ a {
 }
 
 .content_wraper.omne {
-  height: 98vh;
+  height: 100vh;
 }
 
 .navigation {

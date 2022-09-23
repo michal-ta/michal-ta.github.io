@@ -34,17 +34,17 @@ a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-}
 
+}
 .content_wraper{
-    height: 100vh;
+    max-height: 106vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
 
     &.omne{
-        height: 98vh;
+        height: 100vh;
     }
-}
+
+}    
