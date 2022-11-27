@@ -5,6 +5,9 @@
     justify-content: space-between;
     width: 100vw;
     padding: 0 8%;
+    position: fixed;
+    top:0;
+    z-index: 25;
 }
 
 .brand {
