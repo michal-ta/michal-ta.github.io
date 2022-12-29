@@ -1,13 +1,16 @@
-
-.content_main{
-    padding: 13% 8%;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr ;
+.content_wraper.hero{
+    grid-row: 2/3;
+    grid-column: 1/11;
+    @include grid_template_page_align;
     
 }
+
+.content_main.hero{
+    grid-column: 2/10;
+    grid-row: 1/2;
+    @include grid_template_inside;
+}
+
 
 .triangle{
     height: 785px;
@@ -18,22 +21,30 @@
     left: -5%;
 }
 
+
 .hero_btn{
-    width: 30%;
-    text-align: center;
-    
-    justify-self: center;
-    align-self: center;
-    height: em(64, 25);
-    padding: em(12, 25);
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    height: rem(64);
     font-size: clamp(0.8rem,1.2rem,2.5rem);
     background-color: $color_accent;
     font-weight: 700;
     color: #fff;
     position: relative;
+    
+    &:hover,
+    &:focus{
+        scale: 1.1;
+        transition: all 0.5s linear;
+    }
+
+    
 
     &.right{
-        margin-left: 9.5%;
+        grid-column: 7/9;
+            grid-row: 9/10;
         justify-self: flex-start;
         background-color: $color_bg_primary;
         color: $color_darkaccent;
@@ -41,6 +52,11 @@
         border: 2px solid $color_button_active;
         
 
+    }
+
+    &.left{
+        grid-column: 3/5;
+        grid-row: 9/10;
     }
 
     &.left::after{
@@ -56,16 +72,16 @@
 }
 
 .left_side{
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1/6;
+    grid-row:1/7;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: em(12);
+    justify-content: center;
+
     img {
             display: inline-block;
-            height:25%;
         }
 
     h3{
@@ -78,27 +94,34 @@
 
     h1{
         color: #fff;
-        font-size: clamp(2.5rem , 4rem , 5.5rem );
-        margin-top: em(40,88);
+        font-size: clamp(2.5rem , rem(88) , 5.5rem );
+        margin-top: rem(40);
+        line-height: rem(97.5);
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px 5px $color_brand;
         
     }
     p{
-        width: 70%;
-        margin-top: em(40);
+        width: 82%;
+        margin-top: rem(40);
+        line-height: rem(27);
+        font-size: rem(18);
         
     }
+
+        
     
     
 }
 
 
 .right_side{
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 6/11;
+    grid-row: 1/7;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    justify-items: center;
+    width: 100%;
+    justify-content: flex-end;
     align-items: center;
 
     h3 {
@@ -110,9 +133,9 @@
         }
 
     img{
-        margin-left: 24%;
         height: 80%;
-        width: 100%;
+        width: 90%;
+        display: inline-block;
         
     }
 

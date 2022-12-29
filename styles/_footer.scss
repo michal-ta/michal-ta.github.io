@@ -12,7 +12,7 @@ footer{
     }
 
     li{
-        padding: em(4);
+        padding:rem(4);
         background-color: $color_bg_primary;
         font-size: 14px;
         font-weight: 500;
@@ -21,5 +21,5 @@ footer{
 }
 
 .eng{
-    margin-left: em(40);
+    margin-left:rem(40);
 }

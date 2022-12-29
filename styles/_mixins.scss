@@ -1,3 +1,19 @@
-@function em($size, $context:16){
-        @return ($size/$context) +em;
+@function rem($size, $context:16){
+        @return ($size/$context) +rem;
+}
+
+@mixin grid_template_page_align{
+        display: grid;
+        width: 90vw;
+        height: 95vh;
+        grid-template-columns: repeat(10, 10vw);
+        padding: rem(40) 0 rem(40) 0;
+}
+
+@mixin grid_template_inside{
+        display: grid;
+        width: 85vw;
+        height: 90vh;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(10,1fr);
 }
