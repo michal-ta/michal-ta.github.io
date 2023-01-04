@@ -42,7 +42,7 @@
                     color: #828282;
         }
         &-lang{
-            grid-column: 8/10;
+            grid-column: 9/11;
             grid-row: 8/9;
             font-weight: 400;
                 font-size: clamp(0.85rem, 1rem 2rem);
@@ -68,7 +68,7 @@
     }
 
     .right_side{
-        grid-column: 6/10;
+        grid-column: 6/11;
         grid-row: 2/7;
         align-items: flex-start;
         width: 100%;
@@ -120,17 +120,28 @@
         grid-row: 9/10;
         background-color: $color_card;
             padding: rem(22);
+        
     }
     
     .flex_anotherskill{
-        grid-column:6/8;
+        grid-column:6/9;
         grid-row: 9/10;
         background-color: $color_card;
         padding: rem(10);
         width: 90%;
+        }
+        .container {
+                height: 100%;
+
+        ul {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
     }
     .flex_lang{
-        grid-column: 8/10;
+        grid-column: 9/11;
         grid-row: 9/10;
         background-color: $color_card;
         padding: rem(10);
