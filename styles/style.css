@@ -219,33 +219,8 @@ a {
 
 .arrow {
   position: absolute;
-  top: -4.375rem;
-  left: 12.5rem;
-  -webkit-transform: rotateZ(190deg);
-          transform: rotateZ(190deg);
-  /*path{
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 5s linear infinite forwards;
-    }*/
-}
-
-@-webkit-keyframes dash {
-  from {
-    stroke-dashoffset: 1200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 1200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+  top: -4.5rem;
+  left: 11.5rem;
 }
 
 .left_side {

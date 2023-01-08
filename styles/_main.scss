@@ -67,25 +67,9 @@
 
 .arrow{
     position:absolute;
-    top: rem(-70);
-    left: rem(200);
-    transform: rotateZ(190deg);
-    
-    /*path{
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 5s linear infinite forwards;
-    }*/
-}
+    top: rem(-72);
+    left: rem(184);
 
-@keyframes dash {
-    from {
-        stroke-dashoffset: 1200;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
 }
 
 
